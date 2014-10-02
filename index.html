@@ -1,0 +1,333 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>GCM Test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <main>
+      <div class="container">
+        <h1 class="section-title">Bar Stock</h1>
+        <div class="row" id="ingredients-container">
+          <div class="col-xs-12 col-md-6">
+            <div class="row">
+              <div class="col-lg-6">
+                <p class="row ingredient" data-ingredient="vodka">
+                  <span class="col-xs-8 col-lg-8 bb-alpha">Vodka</span>
+                  <span class="col-xs-4 col-lg-4 bb-omega">
+                    <span class="quantity">750</span>
+                    <span class="measurement">ml</span>
+                  </span>
+                </p>
+                <p class="row ingredient" data-ingredient="gin">
+                  <span class="col-xs-8 col-lg-8 bb-alpha">Gin</span>
+                  <span class="col-xs-4 col-lg-4 bb-omega">
+                    <span class="quantity">1.5</span>
+                    <span class="measurement">l</span>
+                  </span>
+                </p>
+                <p class="row ingredient" data-ingredient="tequila">
+                  <span class="col-xs-8 col-lg-8 bb-alpha">Tequila</span>
+                  <span class="col-xs-4 col-lg-4 bb-omega">
+                    <span class="quantity">750</span>
+                    <span class="measurement">ml</span>
+                  </span>
+                </p>
+                <p class="row ingredient" data-ingredient="whiskey">
+                  <span class="col-xs-8 col-lg-8 bb-alpha">Whiskey</span>
+                  <span class="col-xs-4 col-lg-4 bb-omega">
+                    <span class="quantity">750</span>
+                    <span class="measurement">ml</span>
+                  </span>
+                </p>
+              </div>
+              <div class="col-lg-6">
+                <p class="row ingredient" data-ingredient="sweet vermouth">
+                  <span class="col-xs-8 col-lg-8 bb-alpha">Sweet Vermouth</span>
+                  <span class="col-xs-4 col-lg-4 bb-omega">
+                    <span class="quantity">750</span>
+                    <span class="measurement">ml</span>
+                  </span>
+                </p>
+                <p class="row ingredient" data-ingredient="dry vermouth">
+                  <span class="col-xs-8 col-lg-8 bb-alpha">Dry Vermouth</span>
+                  <span class="col-xs-4 col-lg-4 bb-omega">
+                    <span class="quantity">1.5</span>
+                    <span class="measurement">l</span>
+                  </span>
+                </p>
+                <p class="row ingredient last-ingredient-tablet" data-ingredient="bloody mary mix">
+                  <span class="col-xs-8 col-lg-8 bb-alpha">Bloody Mary Mix</span>
+                  <span class="col-xs-4 col-lg-4 bb-omega">
+                    <span class="quantity">2</span>
+                    <span class="measurement">l</span>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="row">
+              <div class="col-lg-6">
+                <p class="row ingredient" data-ingredient="agave nectar">
+                  <span class="col-xs-8 col-lg-8 bb-alpha">Agave Nectar</span>
+                  <span class="col-xs-4 col-lg-4 bb-omega">
+                    <span class="quantity">24</span>
+                    <span class="measurement">oz</span>
+                  </span>
+                </p>
+                <p class="row ingredient" data-ingredient="orange juice">
+                  <span class="col-xs-8 col-lg-8 bb-alpha">Orange Juice</span>
+                  <span class="col-xs-4 col-lg-4 bb-omega">
+                    <span class="quantity">48</span>
+                    <span class="measurement">oz</span>
+                  </span>
+                </p>
+                <p class="row ingredient" data-ingredient="lime">
+                  <span class="col-xs-8 col-lg-8 bb-alpha">Limes</span>
+                  <span class="col-xs-4 col-lg-4 bb-omega">
+                    <span class="quantity">36</span>
+                  </span>
+                </p>
+              </div>
+              <div class="col-lg-6">
+                <p class="row ingredient" data-ingredient="cherry">
+                  <span class="col-xs-8 col-lg-8 bb-alpha">Cherries</span>
+                  <span class="col-xs-4 col-lg-4 bb-omega">
+                    <span class="quantity">9</span>
+                  </span>
+                </p>
+                <p class="row ingredient" data-ingredient="celery stalk">
+                  <span class="col-xs-8 col-lg-8 bb-alpha">Celery Stalks</span>
+                  <span class="col-xs-4 col-lg-4 bb-omega">
+                    <span class="quantity">16</span>
+                  </span>
+                </p>
+                <p class="row ingredient last-ingredient-mobile" data-ingredient="olive">
+                  <span class="col-xs-8 col-lg-8 bb-alpha">Olives</span>
+                  <span class="col-xs-4 col-lg-4 bb-omega">
+                    <span class="quantity">24</span>
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 class="section-title">Orders</h2>
+        <div class="row" id="orders-container">
+          <div class="col-xs-12 col-md-4 col-lg-3 drink-container" data-ingredients='[{"ingredient":"vodka","units":2,"measurement":"ml"},{"ingredient":"bloody mary mix","units":4,"measurement":"ml"},{"ingredient":"celery stalk","units":1,"measurement":"dry"}]' data-available="true" data-drink="bloody mary">
+            <div class="drink-title">
+              <h3>Bloody Mary</h3>
+            </div>
+            <div class="drink-content">
+              <div class="drink-ingredients">
+                <p class="row">
+                  <span class="col-xs-2">2<span class="measurement">oz</span></span>
+                  <span class="col-xs-10">Vodka</span>
+                </p>
+                <p class="row">
+                  <span class="col-xs-2">4<span class="measurement">oz</span></span>
+                  <span class="col-xs-10">Bloody Mary Mix</span>
+                </p>
+                <p class="row">
+                  <span class="col-xs-2">1</span>
+                  <span class="col-xs-10">Celery Stalk</span>
+                </p>
+              </div>
+              <div class="drink-count row">
+                <div class="col-xs-3 col-math">
+                  <a href="#" class="btn-quantity btn-add active">+</a>
+                </div>
+                <div class="col-xs-6">
+                  <input type="text" class="input-drink-count" readonly placeholder="-">
+                </div>
+                <div class="col-xs-3 col-math">
+                  <a href="#" class="btn-quantity btn-delete">-</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4 col-lg-3 drink-container" data-ingredients='[{"ingredient":"gin","units":2,"measurement":"ml"},{"ingredient":"dry vermouth","units":1,"measurement":"ml"},{"ingredient":"olive","units":1,"measurement":"dry"}]' data-available="true" data-drink="martini">
+            <div class="drink-title">
+              <h3>Martini</h3>
+            </div>
+            <div class="drink-content">
+              <div class="drink-ingredients">
+                <p class="row">
+                  <span class="col-xs-2">2<span class="measurement">oz</span></span>
+                  <span class="col-xs-10">Gin</span>
+                </p>
+                <p class="row">
+                  <span class="col-xs-2">1<span class="measurement">oz</span></span>
+                  <span class="col-xs-10">Dry Vermouth</span>
+                </p>
+                <p class="row">
+                  <span class="col-xs-2">1</span>
+                  <span class="col-xs-10">Olive</span>
+                </p>
+              </div>
+              <div class="drink-count row">
+                <div class="col-xs-3 col-math">
+                  <a href="#" class="btn-quantity btn-add active">+</a>
+                </div>
+                <div class="col-xs-6">
+                  <input type="text" class="input-drink-count" readonly placeholder="-">
+                </div>
+                <div class="col-xs-3 col-math">
+                  <a href="#" class="btn-quantity btn-delete">-</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4 col-lg-3 drink-container" data-ingredients='[{"ingredient":"tequila","units":2,"measurement":"ml"},{"ingredient":"orange juice","units":1,"measurement":"oz"},{"ingredient":"agave nectar","units":1,"measurement":"oz"},{"ingredient":"lime","units":1,"measurement":"dry"}]' data-available="true" data-drink="margarita">
+            <div class="drink-title">
+              <h3>Margarita</h3>
+            </div>
+            <div class="drink-content">
+              <div class="drink-ingredients">
+                <p class="row">
+                  <span class="col-xs-2">2<span class="measurement">oz</span></span>
+                  <span class="col-xs-10">Tequila</span>
+                </p>
+                <p class="row">
+                  <span class="col-xs-2">1<span class="measurement">oz</span></span>
+                  <span class="col-xs-10">Orange Juice</span>
+                </p>
+                <p class="row">
+                  <span class="col-xs-2">1<span class="measurement">oz</span></span>
+                  <span class="col-xs-10">Agave Nectar</span>
+                </p>
+                <p class="row">
+                  <span class="col-xs-2">1</span>
+                  <span class="col-xs-10">Lime</span>
+                </p>
+              </div>
+              <div class="drink-count row">
+                <div class="col-xs-3 col-math">
+                  <a href="#" class="btn-quantity btn-add active">+</a>
+                </div>
+                <div class="col-xs-6">
+                  <input type="text" class="input-drink-count" readonly placeholder="-">
+                </div>
+                <div class="col-xs-3 col-math">
+                  <a href="#" class="btn-quantity btn-delete">-</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4 col-lg-3 drink-container" data-ingredients='[{"ingredient":"vodka","units":2,"measurement":"ml"},{"ingredient":"orange juice","units":4,"measurement":"oz"}]' data-available="true" data-drink="screwdriver">
+            <div class="drink-title">
+              <h3>Screwdriver</h3>
+            </div>
+            <div class="drink-content">
+              <div class="drink-ingredients">
+                <p class="row">
+                  <span class="col-xs-2">2<span class="measurement">oz</span></span>
+                  <span class="col-xs-10">Vodka</span>
+                </p>
+                <p class="row">
+                  <span class="col-xs-2">4<span class="measurement">oz</span></span>
+                  <span class="col-xs-10">Orange Juice</span>
+                </p>
+              </div>
+              <div class="drink-count row">
+                <div class="col-xs-3 col-math">
+                  <a href="#" class="btn-quantity btn-add active">+</a>
+                </div>
+                <div class="col-xs-6">
+                  <input type="text" class="input-drink-count" readonly placeholder="-">
+                </div>
+                <div class="col-xs-3 col-math">
+                  <a href="#" class="btn-quantity btn-delete">-</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-4 col-lg-3 drink-container" data-ingredients='[{"ingredient":"whiskey","units":2,"measurement":"ml"},{"ingredient":"sweet vermouth","units":1,"measurement":"ml"},{"ingredient":"cherry","units":1,"measurement":"dry"}]' data-available="true" data-drink="manhattan">
+            <div class="drink-title">
+              <h3>Manhattan</h3>
+            </div>
+            <div class="drink-content">
+              <div class="drink-ingredients">
+                <p class="row">
+                  <span class="col-xs-2">2<span class="measurement">oz</span></span>
+                  <span class="col-xs-10">Whiskey</span>
+                </p>
+                <p class="row">
+                  <span class="col-xs-2">1<span class="measurement">oz</span></span>
+                  <span class="col-xs-10">Sweet Vermouth</span>
+                </p>
+                <p class="row">
+                  <span class="col-xs-2">1</span>
+                  <span class="col-xs-10">Cherry</span>
+                </p>
+              </div>
+              <div class="drink-count row">
+                <div class="col-xs-3 col-math">
+                  <a href="#" class="btn-quantity btn-add active">+</a>
+                </div>
+                <div class="col-xs-6">
+                  <input type="text" class="input-drink-count" readonly placeholder="-">
+                </div>
+                <div class="col-xs-3 col-math">
+                  <a href="#" class="btn-quantity btn-delete">-</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="place-order">
+          <div class="col-xs-12">
+            <button type="submit" class="btn btn-purple disabled" id="submit-order">Place Order</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="row" id="order-summary">
+      <div class="col-xs-12">
+        <h2 class="section-title">Summary</h2>
+        <ul>
+          <li class="row drink-total" data-drink="bloody mary">
+            <span class="col-xs-2 drink-count">-</span>
+            <span class="col-xs-10 drink-name">Bloody Mary</span>
+          </li>
+          <li class="row drink-total" data-drink="martini">
+            <span class="col-xs-2 drink-count">-</span>
+            <span class="col-xs-10 drink-name">Martini</span>
+          </li>
+          <li class="row drink-total" data-drink="margarita">
+            <span class="col-xs-2 drink-count">-</span>
+            <span class="col-xs-10 drink-name">Margarita</span>
+          </li>
+          <li class="row drink-total" data-drink="screwdriver">
+            <span class="col-xs-2 drink-count">-</span>
+            <span class="col-xs-10 drink-name">Screwdriver</span>
+          </li>
+          <li class="row drink-total" data-drink="manhattan">
+            <span class="col-xs-2 drink-count">-</span>
+            <span class="col-xs-10 drink-name">Manhattan</span>
+          </li>
+          <li class="row drink-total" id="summary-total">
+            <span class="col-xs-2 drink-count"><strong>-</strong></span>
+            <span class="col-xs-10 drink-name"><strong>Total</strong></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

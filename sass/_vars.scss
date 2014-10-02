@@ -1,0 +1,38 @@
+// fonts
+$font-light : 200;
+$font-reg   : 400;
+$font-bold  : 700;
+
+// colors
+$font-purple   : #c3a1db;
+$font-green    : #27ae60;
+$font-red      : #c0392b;
+$font-grey     : #807d89;
+$bg-purple     : #211d23;
+$bg-gray       : #37373a;
+$btn-purple    : #9b59b6;
+$border-purple : #90819b;
+
+// responsive
+$tablet        : 768px;
+$desktop       : 992px;
+$large-desktop : 1200px;
+
+// sprite
+$sprite: sprite-map("../img/sprite/*.png");
+
+// Responsinve mixin
+@mixin respond-to($val, $query) {
+  @media ($val: $query) {
+    @content
+  }
+}
+
+@mixin image-replace ($map, $name, $retina) {
+  display: inline-block;
+  @include sprite($map, $name, true);
+  background-image: $map;
+  background-repeat: no-repeat;
+  content: '';
+}
+
