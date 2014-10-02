@@ -226,19 +226,6 @@ $(function() {
       }
     });
 
-
-    function newWindow() {
-      var donkey = window.open('', '', 'width=600, height=400'),
-          moveContent = $('#order-summary').html();
-
-          $('link').each(function() {
-            var styles = $(this).clone();
-            $(donkey.document.body).append(styles);
-          });
-
-          $(donkey.document.body).html(moveContent);
-    }
-
     // function for adding orders to summary
     // *1 loop through each '.drink-container'
     // *2 assign variable for input value
