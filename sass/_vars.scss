@@ -19,7 +19,7 @@ $desktop       : 992px;
 $large-desktop : 1200px;
 
 // sprite
-$sprite: sprite-map("../img/sprite/*.png");
+// $sprite: sprite-map("../img/sprite/*.png");
 
 // Responsinve mixin
 @mixin respond-to($val, $query) {
