@@ -14,6 +14,7 @@
       <div class="container">
         <h1 class="section-title">Bar Stock</h1>
         <div class="row" id="ingredients-container">
+          <!-- These could be rendered from the DRINKS object in js/main.js with a single template -->
           <div class="col-xs-12 col-md-6">
             <div class="row">
               <div class="col-lg-6">
@@ -119,168 +120,7 @@
           </div>
         </div>
         <h2 class="section-title">Orders</h2>
-        <form action="" class="row" id="orders-container">
-          <div class="col-xs-12 col-md-4 col-lg-3 drink-container" data-ingredients='[{"ingredient":"vodka","units":2,"measurement":"ml"},{"ingredient":"bloody mary mix","units":4,"measurement":"ml"},{"ingredient":"celery stalk","units":1,"measurement":"dry"}]' data-available="true" data-drink="bloody mary">
-            <div class="drink-title">
-              <h3>Bloody Mary</h3>
-            </div>
-            <div class="drink-content">
-              <div class="drink-ingredients">
-                <p class="row">
-                  <span class="col-xs-2">2<span class="measurement">oz</span></span>
-                  <span class="col-xs-10">Vodka</span>
-                </p>
-                <p class="row">
-                  <span class="col-xs-2">4<span class="measurement">oz</span></span>
-                  <span class="col-xs-10">Bloody Mary Mix</span>
-                </p>
-                <p class="row">
-                  <span class="col-xs-2">1</span>
-                  <span class="col-xs-10">Celery Stalk</span>
-                </p>
-              </div>
-              <div class="drink-count row">
-                <div class="col-xs-3 col-math">
-                  <a href="#" class="btn-quantity btn-add active">+</a>
-                </div>
-                <div class="col-xs-6">
-                  <input type="text" class="input-drink-count" readonly placeholder="-">
-                </div>
-                <div class="col-xs-3 col-math">
-                  <a href="#" class="btn-quantity btn-delete">-</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4 col-lg-3 drink-container" data-ingredients='[{"ingredient":"gin","units":2,"measurement":"ml"},{"ingredient":"dry vermouth","units":1,"measurement":"ml"},{"ingredient":"olive","units":1,"measurement":"dry"}]' data-available="true" data-drink="martini">
-            <div class="drink-title">
-              <h3>Martini</h3>
-            </div>
-            <div class="drink-content">
-              <div class="drink-ingredients">
-                <p class="row">
-                  <span class="col-xs-2">2<span class="measurement">oz</span></span>
-                  <span class="col-xs-10">Gin</span>
-                </p>
-                <p class="row">
-                  <span class="col-xs-2">1<span class="measurement">oz</span></span>
-                  <span class="col-xs-10">Dry Vermouth</span>
-                </p>
-                <p class="row">
-                  <span class="col-xs-2">1</span>
-                  <span class="col-xs-10">Olive</span>
-                </p>
-              </div>
-              <div class="drink-count row">
-                <div class="col-xs-3 col-math">
-                  <a href="#" class="btn-quantity btn-add active">+</a>
-                </div>
-                <div class="col-xs-6">
-                  <input type="text" class="input-drink-count" readonly placeholder="-">
-                </div>
-                <div class="col-xs-3 col-math">
-                  <a href="#" class="btn-quantity btn-delete">-</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4 col-lg-3 drink-container" data-ingredients='[{"ingredient":"tequila","units":2,"measurement":"ml"},{"ingredient":"orange juice","units":1,"measurement":"oz"},{"ingredient":"agave nectar","units":1,"measurement":"oz"},{"ingredient":"lime","units":1,"measurement":"dry"}]' data-available="true" data-drink="margarita">
-            <div class="drink-title">
-              <h3>Margarita</h3>
-            </div>
-            <div class="drink-content">
-              <div class="drink-ingredients">
-                <p class="row">
-                  <span class="col-xs-2">2<span class="measurement">oz</span></span>
-                  <span class="col-xs-10">Tequila</span>
-                </p>
-                <p class="row">
-                  <span class="col-xs-2">1<span class="measurement">oz</span></span>
-                  <span class="col-xs-10">Orange Juice</span>
-                </p>
-                <p class="row">
-                  <span class="col-xs-2">1<span class="measurement">oz</span></span>
-                  <span class="col-xs-10">Agave Nectar</span>
-                </p>
-                <p class="row">
-                  <span class="col-xs-2">1</span>
-                  <span class="col-xs-10">Lime</span>
-                </p>
-              </div>
-              <div class="drink-count row">
-                <div class="col-xs-3 col-math">
-                  <a href="#" class="btn-quantity btn-add active">+</a>
-                </div>
-                <div class="col-xs-6">
-                  <input type="text" class="input-drink-count" readonly placeholder="-">
-                </div>
-                <div class="col-xs-3 col-math">
-                  <a href="#" class="btn-quantity btn-delete">-</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4 col-lg-3 drink-container" data-ingredients='[{"ingredient":"vodka","units":2,"measurement":"ml"},{"ingredient":"orange juice","units":4,"measurement":"oz"}]' data-available="true" data-drink="screwdriver">
-            <div class="drink-title">
-              <h3>Screwdriver</h3>
-            </div>
-            <div class="drink-content">
-              <div class="drink-ingredients">
-                <p class="row">
-                  <span class="col-xs-2">2<span class="measurement">oz</span></span>
-                  <span class="col-xs-10">Vodka</span>
-                </p>
-                <p class="row">
-                  <span class="col-xs-2">4<span class="measurement">oz</span></span>
-                  <span class="col-xs-10">Orange Juice</span>
-                </p>
-              </div>
-              <div class="drink-count row">
-                <div class="col-xs-3 col-math">
-                  <a href="#" class="btn-quantity btn-add active">+</a>
-                </div>
-                <div class="col-xs-6">
-                  <input type="text" class="input-drink-count" readonly placeholder="-">
-                </div>
-                <div class="col-xs-3 col-math">
-                  <a href="#" class="btn-quantity btn-delete">-</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-4 col-lg-3 drink-container" data-ingredients='[{"ingredient":"whiskey","units":2,"measurement":"ml"},{"ingredient":"sweet vermouth","units":1,"measurement":"ml"},{"ingredient":"cherry","units":1,"measurement":"dry"}]' data-available="true" data-drink="manhattan">
-            <div class="drink-title">
-              <h3>Manhattan</h3>
-            </div>
-            <div class="drink-content">
-              <div class="drink-ingredients">
-                <p class="row">
-                  <span class="col-xs-2">2<span class="measurement">oz</span></span>
-                  <span class="col-xs-10">Whiskey</span>
-                </p>
-                <p class="row">
-                  <span class="col-xs-2">1<span class="measurement">oz</span></span>
-                  <span class="col-xs-10">Sweet Vermouth</span>
-                </p>
-                <p class="row">
-                  <span class="col-xs-2">1</span>
-                  <span class="col-xs-10">Cherry</span>
-                </p>
-              </div>
-              <div class="drink-count row">
-                <div class="col-xs-3 col-math">
-                  <a href="#" class="btn-quantity btn-add active">+</a>
-                </div>
-                <div class="col-xs-6">
-                  <input type="text" class="input-drink-count" readonly placeholder="-">
-                </div>
-                <div class="col-xs-3 col-math">
-                  <a href="#" class="btn-quantity btn-delete">-</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
+        <form action="" class="row" id="orders-container"></form>
         <div class="row" id="place-order">
           <div class="col-xs-12">
             <button type="submit" class="btn btn-purple disabled" id="submit-order">Place Order</button>
@@ -291,6 +131,7 @@
     <div class="row" id="order-summary">
       <div class="col-xs-12">
         <h2 class="section-title">Summary</h2>
+        <!-- These could be rendered from the DRINKS object in js/main.js with a single template -->
         <ul>
           <li class="row drink-total" data-drink="bloody mary">
             <span class="col-xs-2 drink-count">-</span>
@@ -322,6 +163,7 @@
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
